@@ -1,9 +1,9 @@
 import React from 'react'
-import Logo from '../assets/Group 112.png'
+import Logo from '../assets/img/Group 112.png'
 
 function Navbar() {
     return (
-        <div className="container-fluid w-full h-32 bg-[#49bbbd] border-2 border-[#000]">
+        <div className="container-fluid w-full">
             <nav className='flex justify-between items-center'>
                 <div className="nav-right relative left-[121px] top-[15px]">
                     <img src={Logo} alt="" className='h-18 w-24 rounded-[6px]' />
@@ -16,11 +16,11 @@ function Navbar() {
                         <li>Blog</li>
                         <li>About Us</li>
                     </ul>
-                    <button className='bg-white text-black font-semibold w-[120px] h-[40px] 
-                    rounded-[80px] outline-none relative right-[45px] top-[4px]'>
+                    <button className='bg-white text-black w-[120px] h-[40px] text-[14px] 
+                    rounded-[80px] outline-none border-none relative right-[45px] top-[4px]'>
                         Login
                     </button>
-                    <button className='bg-white text-black font-semibold w-[120px] h-[40px]
+                    <button className='bg-[#FFFFFF4D] text-white text-[14px] w-[120px] h-[40px]
                      rounded-[80px] relative right-[25px] top-[4px]'>
                         Sign Up
                     </button>
