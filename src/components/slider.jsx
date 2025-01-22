@@ -2,6 +2,7 @@ import React from 'react'
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import GirlsSlider from '../assets/img/lovely-teenage-girl-with-curly-hair-posing-yellow-tshirt-min 1.png'
 import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
+import UserImage from '../assets/img/Ellipse.png'
 
 function Slider() {
     return (
@@ -28,23 +29,45 @@ function Slider() {
                 </div>
                 <div className="flex border-2 border-[#000] relative top-32">
                     <div className="slider-sec-2">
-                        <div className="slider-girls-image">    
+                        <div className="slider-girls-image">
                             <img src={GirlsSlider} alt="slider_girls" />
                         </div>
                         <div className="slider-views flex">
                             <div className="views-image">
                                 <div className="views-image-left">
                                     <CalendarMonthOutlinedIcon style={{
-                                        color:'white',
-                                        height:'25px'
+                                        color: 'white',
+                                        height: '25px'
                                     }} />
                                 </div>
                             </div>
                             <div className="views-text">
-                            <p className='pt-3 font-[600]'>250K</p>
-                            <p className='relative top-[-3px]'>Assisted Student</p>
+                                <p className='pt-3 font-[500]'>250K</p>
+                                <p className='relative top-[-3px] text-[#666]' style={{
+                                    fontSize: '0.8rem'
+                                }}>Assisted Student</p>
                             </div>
                         </div>
+
+
+                        <div className="slider-users-experience flex">
+                            <div className="users-image">
+                                <div className="users-image-left">
+                                    <img src={UserImage} alt="user_photo" />
+                                </div>
+                            </div>
+                            <div className="users-text">
+                                <p className='pt-3 font-[500]'>Users Experience Class</p>
+                                <p className='relative top-[-3px] text-[#666]' style={{
+                                    fontSize: '0.8rem'
+                                }}>Today at 12:00 PM</p>
+                                <button className='bg-[#d8587e] py-1 text-white text-[11px] w-[100px] h-[30px] mt-2 rounded-[80px] font-[500] 
+                                mb-[50px]' style={{ fontFamily: 'poppins' }}>
+                                    Join Now
+                                </button>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
