@@ -3,12 +3,14 @@ import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import GirlsSlider from '../assets/img/lovely-teenage-girl-with-curly-hair-posing-yellow-tshirt-min 1.png'
 import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
 import UserImage from '../assets/img/Ellipse.png'
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import LogoSlider from '../assets/img/Group 9.png'
 
 function Slider() {
     return (
         <div className='container-slider'>
             <div className="grid grid-cols-2">
-                <div className="flex w-full border-2 border-[#000] relative top-32 pb-[100px]">
+                <div className="flex w-full relative top-32 pb-[100px]">
                     <div className="slider-sec-1">
                         <h1 className='section-heading text-white font-[700]'> <span className='text-[#f48c06] font-[700]'>Studying </span>Online is now much easier</h1>
                         <p className='slider-para'>TOTC is an interesting platform that will teach you in more an interactive way</p>
@@ -27,7 +29,7 @@ function Slider() {
                         </div>
                     </div>
                 </div>
-                <div className="flex border-2 border-[#000] relative top-32">
+                <div className="flex relative top-32">
                     <div className="slider-sec-2">
                         <div className="slider-girls-image">
                             <img src={GirlsSlider} alt="slider_girls" />
@@ -48,8 +50,6 @@ function Slider() {
                                 }}>Assisted Student</p>
                             </div>
                         </div>
-
-
                         <div className="slider-users-experience flex">
                             <div className="users-image">
                                 <div className="users-image-left">
@@ -66,6 +66,26 @@ function Slider() {
                                     Join Now
                                 </button>
                             </div>
+                        </div>
+                        <div className="slider-congratulations flex">
+                            <div className="views-image">
+                                <div className="slider-image-left">
+                                    <EmailOutlinedIcon style={{
+                                        color: 'white',
+                                        height: '22px'
+                                    }} />
+                                </div>
+                            </div>
+                            <div className="sliders-text">
+                                <p className='pt-3 font-[500]'>Congratulations</p>
+                                <p className='relative top-[-3px] text-[#666]' style={{
+                                    fontSize: '0.7rem'
+                                }}>your admission completed</p>
+                            </div>
+                        </div>
+
+                        <div className="slider-logo">
+                            <img src={LogoSlider} height={'100%'} alt="" />
                         </div>
 
                     </div>

@@ -20,19 +20,18 @@
   font-family: var(--font-family);
 }
 .container-slider {
-  height: 700px;
   margin-top: -70px;
   background-image: url(../src/assets/img/header-pic.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   overflow: hidden;
+  padding-bottom: 150px;
 }
 .slider-sec-1 {
   padding-top: 60px;
   padding-bottom: 100px;
   width: 90%;
-  border: 2px solid red;
 }
 .section-heading {
   font-family: var(--font-family);
@@ -74,7 +73,6 @@
 .slider-girls-image {
   height: auto;
   width: 65%;
-  border: 2px solid red;
   overflow: hidden;
   position: relative;
   top: -35px;
@@ -151,3 +149,45 @@
   font-size: 0.9rem;
   font-family: var(--font-family);
 }
+.slider-congratulations{
+    height: 60px;
+    width: 240px;
+    background-color: #dbf1f2;
+    position: absolute;
+    top: 280px;
+    left: 340px;
+    border-radius: 20px;
+  }
+  .slider-image{
+    height: 60px;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider-image-left{
+    height: 35px;
+    width: 35px;
+    background-color: #f88c3d;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sliders-text{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -10px;
+  }
+  .sliders-text > p{
+    font-size: 0.9rem;
+    font-family: var(--font-family);
+  }
+  .slider-logo{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 90px;
+    left: 500px;
+  }
